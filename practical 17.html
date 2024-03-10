@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 17</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<h2 class="text-center">Bambhaniya Faizan</h2>
+<h3 class="text-center">22609037002</h3>
+
+    <div class="container mt-5 bg-warning">
+        <h1 class="text-center">Service Providers</h1>
+
+       
+        <div class="panel-group" id="serviceProvidersAccordion" role="tablist" aria-multiselectable="true">
+
+           
+            <div class="panel panel-default bg-danger">
+                <div class="panel-heading" role="tab" id="provider1Heading">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#serviceProvidersAccordion" href="#provider1Collapse" aria-expanded="true" aria-controls="provider1Collapse">
+                            Service Provider 1
+                        </a>
+                    </h4>
+                </div>
+                <div id="provider1Collapse" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="provider1Heading">
+                    <div class="panel-body">
+                        
+                        <ul class="list-group">
+                            <li class="list-group-item bg-primary">Service 1</li>
+                            <li class="list-group-item bg-secondary">Service 2</li>
+                            <li class="list-group-item bg-success">Service 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="panel panel-default bg-danger">
+                <div class="panel-heading" role="tab" id="provider2Heading">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#serviceProvidersAccordion" href="#provider2Collapse" aria-expanded="false" aria-controls="provider2Collapse">
+                            Service Provider 2
+                        </a>
+                    </h4>
+                </div>
+                <div id="provider2Collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="provider2Heading">
+                    <div class="panel-body">
+                       
+                        <ul class="list-group">
+                            <li class="list-group-item bg-primary">Service A</li>
+                            <li class="list-group-item bg-secondary">Service B</li>
+                            <li class="list-group-item bg-success ">Service C</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="alert alert-dark mt-3" role="alert" id="successAlert">
+            <strong>Success!</strong> The alert message has been closed.
+        </div>
+
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+
+</body>
+</html>

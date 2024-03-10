@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 19q</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+</head>
+<body>
+ <h2 class="text-center">Student Registration</h2>
+  <div class="container">
+
+   
+
+    <!-- Add Student Button -->
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#addModal">Add Student</button>
+
+    <!-- Add Student Modal -->
+    <div class="modal" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-dark">
+          <div class="modal-header bg-primary">
+            <h5 class="modal-title" id="addModalLabel">Add Student</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Form for adding student details -->
+            <form id="addForm">
+              <div class="form-group bg-success">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="form-group bg-warning">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email"required>
+              </div>
+      <div class="form-group bg-danger">
+                                <label for="studentAge">Age:</label>
+                                <input type="age" class="form-control" id="Age"required>
+                            </div>
+ 	
+              <button type="submit" class="btn btn-primary btn-lg">Add Student</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Validation Error Modal -->
+    <div class="modal" id="validationErrorModal" tabindex="-1" role="dialog" aria-labelledby="validationErrorModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="validationErrorModalLabel">Error</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p id="errorMessage"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  
+
+</body>
+</html>
